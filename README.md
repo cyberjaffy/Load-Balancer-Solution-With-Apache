@@ -34,7 +34,7 @@ Let us take a look at the updated solution architecture with an LB added on top 
 
 ## Objective
 
-   ![image 1](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%201.jpg)
+   <img width="1680" height="1056" alt="image" src="https://github.com/user-attachments/assets/05920044-7d7e-4fc9-a577-979a03ffcc24" />
 
 In this project, we will enhance our Tooling Website solution by adding an Apache Load Balancer to distribute traffic between two Web Servers. This will allow users to access our website using a single URL.
 
@@ -51,15 +51,14 @@ Ensure you have the following servers already installed and configured from the 
 2. One MySQL DB Server (Ubuntu 24.04)
 3. One RHEL8 NFS Server
 
-   ![image 2](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%202.jpg)
-
+  <img width="1712" height="958" alt="image" src="https://github.com/user-attachments/assets/1b69b9a5-10c2-49b5-8318-dc31fd11f965" />
 
 
 ## Step 1 - Configure Apache as a Load Balancer
 
-1. Create an Ubuntu 20.04 EC2 instance and name it Project-8-apache-lb, and open TCP port 80 by creating an inbound rule in the security group for this instance.
+1. Create an Ubuntu 22 EC2 instance and name it Load Balancer, and open TCP port 80 by creating an inbound rule in the security group for this instance.
 
-   ![image 3](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%203.jpg)
+   <img width="2850" height="594" alt="image" src="https://github.com/user-attachments/assets/fc4534d1-a8a8-45a6-9b8f-cec416d018b7" />
 
 2. Install Apache and Configure Load Balancer
 
@@ -117,7 +116,7 @@ Ensure you have the following servers already installed and configured from the 
    ```
    Replace and with the private IPs of your two RHEL8 web servers.
    
-   ![image 4](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%204.jpg)
+<img width="1148" height="726" alt="image" src="https://github.com/user-attachments/assets/afee00d2-5c8b-4b06-8aa4-b3578499c1d3" />
 
 4. Restart Apache to Apply Changes:
 
@@ -132,8 +131,8 @@ Ensure you have the following servers already installed and configured from the 
    ```
    http://<Load-Balancer-Public-IP>/index.php
    ```
+   <img width="2784" height="1690" alt="image" src="https://github.com/user-attachments/assets/9c0fc702-89b4-4c15-a7ce-5294ce106487" />
 
-   ![image 5](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%205.jpg)
 
 2. Open two SSH terminals, one for each Web Server, and run the following command to monitor the logs:
 
@@ -158,6 +157,7 @@ Ensure you have the following servers already installed and configured from the 
    <WebServer1-Private-IP-Address> Web1
    <WebServer2-Private-IP-Address> Web2
    ```
+<img width="1000" height="476" alt="image" src="https://github.com/user-attachments/assets/0f818181-dcb2-406b-a051-215eb3028c89" />
 
 3. Save the file and exit the editor.
 
@@ -177,11 +177,9 @@ Ensure you have the following servers already installed and configured from the 
    sudo systemctl restart apache2
    ```
 
-   ![image 5](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%205.jpg)
-
   You can also test if the names resolve correctly from the Load Balancer by using curl:
 
-   ![image 6](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%206.jpg)
+<img width="1890" height="1384" alt="image" src="https://github.com/user-attachments/assets/97e72b0e-9c45-406b-96e5-bcf1fdc6e420" />
 
 
 # Tagrget Architecture
@@ -196,7 +194,7 @@ At this stage, your setup should look like this:
 
 4. One RHEL8 NFS Server (RHEL8 EC2 instance)
 
-   ![image 8](https://github.com/Captnfresh/Load-balancer-with-Apache/blob/main/Load%20balancer%20with%20Apache/image%208.png)
+<img width="1704" height="1390" alt="image" src="https://github.com/user-attachments/assets/9b932043-69fd-47b4-a867-8cfd8458d000" />
 
 
    ## CONGRATULATIONS!!!!!!! YOU HAVE JUST IMPLEMENTED A LOAD BALANCER SOLUTION WITH APACHE FOR YOUR DEVOPS TEAM.
