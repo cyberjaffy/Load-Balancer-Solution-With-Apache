@@ -80,9 +80,3 @@ Load balancers are classified based on the **layer of the OSI model** they opera
    - **When to use**: Use sticky sessions when backend servers store session-specific data locally. If your application uses a shared session store (like Redis or a database), sticky sessions are usually not needed.
 
 ---
-
-## Next Steps
-
-- Set up a small Apache load balancer in a lab environment.  
-- Test both **L4** and **L7** traffic distribution and observe the differences.  
-- Experiment with **sticky sessions** using `mod_proxy_balancer` and see how it affects user experience when session data is stored on a single server.
