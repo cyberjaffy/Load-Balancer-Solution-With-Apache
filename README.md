@@ -181,6 +181,9 @@ Ensure you have the following servers already installed and configured from the 
 
 <img width="1890" height="1384" alt="image" src="https://github.com/user-attachments/assets/97e72b0e-9c45-406b-96e5-bcf1fdc6e420" />
 
+<img width="2418" height="1376" alt="image" src="https://github.com/user-attachments/assets/5920e7b0-707e-4028-aa23-65597eb39c05" />
+
+
 
 # Tagrget Architecture
 
